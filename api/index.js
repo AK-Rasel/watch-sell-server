@@ -118,8 +118,6 @@ async function run() {
           message: "Product added to cart",
         });
       } catch (error) {
-        console.error(error);
-
         res.status(500).send({
           message: "Error updating cart",
           error,
@@ -194,8 +192,6 @@ async function run() {
           message: "Product removed from cart",
         });
       } catch (error) {
-        console.error(error);
-
         res.status(500).send({
           message: "Error updating quantity",
           error,
